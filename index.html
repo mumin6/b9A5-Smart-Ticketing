@@ -15,12 +15,12 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <header class="px-8">
+<body class="m-4">
+    <header class=" mx-4">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
 
-                <a class="btn btn-ghost text-3xl font-extrabold text-black">P Ticket</a>
+                <a class="btn btn-ghost text-xl lg:text-3xl font-extrabold text-black">P Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 font-medium text-lg">
@@ -37,14 +37,50 @@
         </div>
     </header>
     <section>
-        <div class="flex flex-col bg-[url('/images/banner.png')] bg-cover lg:w-[1171px] lg:h-[550px] mx-auto rounded-3xl">
+        <div
+            class="flex flex-col bg-[url('/images/banner.png')]  bg-cover min-h-screen min-w-screen mx-auto rounded-3xl">
             <h1 class="text-center lg:text-6xl pt-12 font-extrabold text-white">End-to-End Travel with</h1>
             <h1 class="text-center lg:text-6xl p-4 font-extrabold text-green-700">P Paribahan</h1>
-            <p class="text-center text-base font-normal p-4 text-white">Discover the world, from your home to edge of the world.
+            <p class="text-center lg:text-base lg:font-normal p-4 text-white">Discover the world, from your home to edge
+                of
+                the world.
                 Whether you’re a frequent traveler or enthusiast, we’ve got something for everyone.</p>
-                <button class="btn btn-success font-bold text-xl mx-auto ">Buy Ticket</button>
+            <button class="btn btn-success font-bold text-xl mx-auto ">Buy Ticket</button>
         </div>
     </section>
+    <h1 class="text-center font-bold text-4xl m-4">Best offers for you</h1>
+
+    <div class="flex flex-col w-full lg:flex-row gap-12 mt-8">
+        <div class="grid flex-grow h-fit card bg-base-300 rounded-box place-items-center bg-yellow-500">
+            <div class="flex flex-col lg:flex-row w-full max-h-fit p-4 lg:p-8">
+                <div class="lg:w-1/2">
+                    <h1 class="text-4xl font-black">15% OFF</h1>
+                    <p class="text-xl font-semibold"> on your next purchase</p>
+                    <p class="text-base font-medium">use by January 2024</p>
+                </div>
+                <div class="divider lg:divider-horizontal"></div>
+                <div class="lg:w-1/2">
+                    <h1 class="font-extrabold text-3xl">NEW15</h1>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid flex-grow h-fit card bg-base-300 rounded-box place-items-center bg-pink-500">
+            <div class="flex flex-col lg:flex-row w-full h-fit p-4 lg:p-8 ">
+                <div class="lg:w-1/2">
+                    <h1 class="text-4xl font-black">20% OFF</h1>
+                    <p class="text-xl font-semibold"> on your next purchase</p>
+                    <p class="text-base font-medium">use by January 2024</p>
+                </div>
+                <div class="divider lg:divider-horizontal"></div>
+                <div class="lg:w-1/2">
+                    <h1 class="font-extrabold text-3xl">Couple 20</h1>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
