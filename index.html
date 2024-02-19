@@ -142,33 +142,35 @@
     </div>
 
     <!-- select your seat section -->
-    <section>
-        <div>
+    <section class="flex mt-16 lg:flex-row flex-col">
+        <div class="w-full lg:w-1/2">
             <div>
-                <h1>Select Your Seat</h1>
+                <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                 <hr>
                 <div class="flex justify-between">
-                    <p><i class="fa-solid fa-chair"></i>Available</p>
-                    <p class="text-green-600"><i class="fa-solid fa-chair" style="color: #2fa30f;"></i>Selected</p>
+                    <p class="font-medium"><i class="fa-solid fa-chair"></i>Available</p>
+                    <p class="text-green-600 font-medium"><i class="fa-solid fa-chair"
+                            style="color: #2fa30f;"></i>Selected</p>
                 </div>
             </div>
             <div>
                 <div class="overflow-x-auto">
                     <table class="table">
                         <tr>
-                          
+
                             <th></th>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button class="btn btn-outline "><i class="fa-solid fa-dharmachakra" style="color: #2fa30f;"></i></button></td>
+                            <td><button class="btn btn-outline "><i class="fa-solid fa-dharmachakra"
+                                        style="color: #2fa30f;"></i></button></td>
 
                         </tr>
 
 
                         <tbody>
                             <!-- row 1 -->
-                            
+
                             <tr>
                                 <th>A</th>
                                 <td><button class="btn btn-outline  text-slate-700">A1</button></td>
@@ -198,8 +200,68 @@
                 </div>
             </div>
         </div>
+        <div class="divider lg:divider-horizontal"></div>
         <!-- right hand section -->
-        <div>
+        <div class="w-full lg:w-1/2">
+            <div>
+                <h1 class="font-semibold text-2xl">Select Your Seat</h1>
+                <hr>
+            </div>
+            <div class="p-4">
+              
+                <div class="flex justify-between">
+                    <p>Seat</p>
+                    <p>Class</p>
+                    <p>Price</p>
+                </div>
+                <div>
+                    <!-- selected seat here -->
+                </div>
+                <hr>
+                <div class="flex justify-between my-4">
+                    <p>Total Price</p>
+                    <p>BDT <span>0</span></p>
+                </div>
+                <div class="">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Have any copupon?" />
+                        <span class=""><button class="btn btn-success">Apply</button></span>
+                    </label>
+                </div>
+                <hr class="mt-2">
+                <div class="flex justify-between mt-4">
+                    <p>Grand Total</p>
+                    <p>BDT <span>0</span></p>
+                </div>
+                <div class="my-4">
+                    <p>Passenger Name*</p>
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Enter your name" />
+                       
+                    </label>
+                </div>
+                <div class="my-4">
+                    <p>Phone Number*</p>
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="number" class="grow" placeholder="Enter your phone number" />
+                       
+                    </label>
+                </div>
+                <div class="my-4">
+                    <p>Email ID</p>
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="email" class="grow" placeholder="Enter your email id" />
+                       
+                    </label>
+
+                </div>
+                <button class="btn btn-success btn-wide w-full">Next</button>
+                <div class="mt-4 flex justify-around">
+                    <p><a href="">Terms and Conditions</a></p>
+                    <p><a href="">Cancellation Policy</a></p>
+                    
+                </div>
+            </div>
 
         </div>
     </section>
