@@ -45,7 +45,7 @@
                 of
                 the world.
                 Whether you’re a frequent traveler or enthusiast, we’ve got something for everyone.</p>
-            <button class="btn btn-success font-bold text-xl mx-auto ">Buy Ticket</button>
+            <button  class="btn btn-success font-bold text-xl mx-auto "><a href="#buy">Buy Ticket</a></button>
         </div>
     </section>
     <h1 class="text-center font-bold text-4xl m-4">Best offers for you</h1>
@@ -143,7 +143,7 @@
     </div>
 
     <!-- select your seat section -->
-    <section class="flex p-2 mt-16 lg:flex-row flex-col">
+    <section id="buy" class="flex p-2 mt-16 lg:flex-row flex-col">
         <div class="w-full lg:w-1/2">
             <div>
                 <h1 class="text-2xl font-semibold">Select Your Seat</h1>
@@ -306,8 +306,16 @@
         </div>
     </section>
 
-    <div id="success" class="hidden fixed inset-0 flex items-center justify-center z-50">
-
+    <div id="success" class="hidden fixed inset-0 flex flex-col items-center justify-center z-50 bg-slate-300 p-4">
+        <img src="./images/success.png" alt="">
+        <p class="text-green-600 text-2xl">SUCCESS</p>
+        <p class="mt-4 text-xl font-medium text-slate-950">Thank you for Booking Our Bus Seats.
+            We are working hard to find the best service and deals for you.
+        </p>
+        <p class="text-xl font-light">
+            Shortly you will find a confirmation in your email.
+        </p>
+        <button class="mt-4 btn btn-success rounded-full font-bold text-xl mx-auto ">Continue</button>
     </div>
 
 
