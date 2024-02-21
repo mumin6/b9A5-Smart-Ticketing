@@ -104,7 +104,7 @@
                 </div>
                 <div>
                     <button class="btn btn-outline btn-success"><i class="fa-solid fa-chair"
-                            style="color: #2fa30f;"></i><span>40</span>Seat left</button>
+                            style="color: #2fa30f;"></i><span id="seat-left">40</span>Seat left</button>
                 </div>
             </div>
             <div class="flex flex-col">
@@ -249,7 +249,7 @@
             <div class="p-4">
 
                 <div class="flex justify-between">
-                    <p>Seat<span></span></p>
+                    <p>Seat <span id="seat-selected">0</span></p>
                     <p>Class</p>
                     <p>Price</p>
                 </div>
@@ -263,10 +263,10 @@
                     <p>Total Price</p>
                     <p>BDT <span id="total">0</span></p>
                 </div>
-                <div class="">
+                <div id="coupon-hide" class="">
                     <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow" placeholder="Have any copupon?" />
-                        <span class=""><button class="btn btn-success">Apply</button></span>
+                        <input id="coupon-code" type="text" class="grow" placeholder="Have any copupon?" />
+                        <span class=""><button onclick="grandTotal('apply')" class="btn btn-success">Apply</button></span>
                     </label>
                 </div>
                 <hr class="mt-2">
