@@ -137,7 +137,7 @@
         <div class="divider lg:divider-horizontal"></div>
         <div class="w-full lg:w-1/4 p-4">
             <img src="./images/fare.png" alt="taka" class="m-auto">
-            <h1 class="text-3xl font-bold text-center">550 Taka</h1>
+            <h1 class="text-3xl font-bold text-center"><span id="price">550</span>Taka</h1>
             <p class="text-2xl font-semibold text-center">Per Seat</p>
         </div>
     </div>
@@ -148,7 +148,7 @@
             <div>
                 <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                 <hr>
-                <div class="flex justify-between">
+                <div class="flex justify-between mt-4">
                     <p class="font-medium"><i class="fa-solid fa-chair"></i>Available</p>
                     <p class="text-green-600 font-medium"><i class="fa-solid fa-chair"
                             style="color: #2fa30f;"></i>Selected</p>
@@ -166,17 +166,17 @@
                     </div>
                     <div class="flex justify-around my-4">
                         <p>A</p>
-                        <button id="A1" class="btn btn-outline  text-slate-700">A1</button>
-                        <button id="A2" class="btn btn-outline  text-slate-700">A2</button>
-                        <button id="A3" class="btn btn-outline  text-slate-700">A3</button>
-                        <button id="A4" class="btn btn-outline  text-slate-700">A4</button>
+                        <button onclick="selectSeat('A1')" id="A1" class="btn btn-outline  text-slate-700">A1</button>
+                        <button onclick="selectSeat('A2')" id="A2" class="btn btn-outline  text-slate-700">A2</button>
+                        <button onclick="selectSeat('A3')" id="A3" class="btn btn-outline  text-slate-700">A3</button>
+                        <button onclick="selectSeat('A4')" id="A4" class="btn btn-outline  text-slate-700">A4</button>
                     </div>
                     <div class="flex justify-around">
                         <p>B</p>
-                        <button id="B1" class="btn btn-outline  text-slate-700">B1</button>
-                        <button id="B2" class="btn btn-outline  text-slate-700">B2</button>
-                        <button id="B3" class="btn btn-outline  text-slate-700">B3</button>
-                        <button id="B4" class="btn btn-outline  text-slate-700">B4</button>
+                        <button onclick="selectSeat('B1')" id="B1" class="btn btn-outline  text-slate-700">B1</button>
+                        <button onclick="selectSeat('B2')" id="B2" class="btn btn-outline  text-slate-700">B2</button>
+                        <button onclick="selectSeat('B3')" id="B3" class="btn btn-outline  text-slate-700">B3</button>
+                        <button onclick="selectSeat('B4')" id="B4" class="btn btn-outline  text-slate-700">B4</button>
                     </div>
                     <div class="flex justify-around my-4">
                         <p>C</p>
@@ -249,18 +249,19 @@
             <div class="p-4">
 
                 <div class="flex justify-between">
-                    <p>Seat</p>
+                    <p>Seat<span></span></p>
                     <p>Class</p>
                     <p>Price</p>
                 </div>
                 <hr>
-                <div>
+                <div id="selected">
+                    
                     <!-- selected seat here -->
                 </div>
                 <hr>
                 <div class="flex justify-between my-4">
                     <p>Total Price</p>
-                    <p>BDT <span>0</span></p>
+                    <p>BDT <span id="total">0</span></p>
                 </div>
                 <div class="">
                     <label class="input input-bordered flex items-center gap-2">
@@ -271,7 +272,7 @@
                 <hr class="mt-2">
                 <div class="flex justify-between mt-4">
                     <p>Grand Total</p>
-                    <p>BDT <span>0</span></p>
+                    <p>BDT <span id="grand-total">0</span></p>
                 </div>
                 <div class="my-4">
                     <p>Passenger Name*</p>
@@ -283,7 +284,7 @@
                 <div class="my-4">
                     <p>Phone Number*</p>
                     <label class="input input-bordered flex items-center gap-2">
-                        <input type="number" class="grow" placeholder="Enter your phone number" />
+                        <input type="number" class="grow" placeholder="Enter your phone number" required />
 
                     </label>
                 </div>
@@ -333,6 +334,7 @@
             </div>
         </nav>
     </footer>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
